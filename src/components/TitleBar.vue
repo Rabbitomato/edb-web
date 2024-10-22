@@ -1,27 +1,24 @@
 <template>
   <nav class="title-bar">
-    <!-- <router-link to="/"> -->
     <img src="../assets/logo3.png" class="logo">
-    <!-- </router-link> -->
     <div class="option">
       安全数据
       <div class="dropdown">
         <a href="#">漏洞数据</a>
-        <!-- <router-link to="/cybersploit"><a href="#">PoC</a></router-link> -->
         <a href="/cybersploit">漏洞PoC</a>
       </div>
     </div>
     <div class="option">
       分析框架
       <div class="dropdown">
-        <a href="#">鸿蒙应用分析</a>
+        <a href="http://119.29.73.177:5555/sctruster">鸿蒙应用分析</a>
         <a href="#">跨平台应用分析</a>
       </div>
     </div>
     <div class="option">
       漏洞检测
       <div class="dropdown">
-        <a href="#">SAST漏洞检测</a>
+        <a href="http://vulstotal.com">SAST漏洞检测</a>
         <a href="#">SCA漏洞检测</a>
         <a href="#">PoC漏洞验证</a>
       </div>
@@ -30,11 +27,11 @@
       恶意软件
       <div class="dropdown">
         <a href="#">恶意代码检测</a>
-        <a href="#">恶意行为画像</a>
+        <a href="http://promal.top">恶意行为画像</a>
       </div>
     </div>
-    
-    
+
+
     <!--
     <div class="button-container">
       <div class="logsign">
@@ -59,7 +56,7 @@ export default {
   position: relative;
   background-color: #ffffff;
   color: white;
-  height: 100px;
+  /* height: 100px; */
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -68,48 +65,51 @@ export default {
 }
 
 .logo {
-  width: 300px;
-  height: 100px;
-  margin-right: 50px;
+  width: 17vw;
+  height: 6vw;
+  margin-bottom: 1.1vw;
+  /* margin-right: 50px; */
   /* 给图片添加右边距，让下拉框离图片有一定距离 */
 }
 
 .option {
+  /* display: flex; */
   position: relative;
-  font-size: 21px;
-  width: 120px;
-  height: 35px;
+  font-size: 1vw;
+  width: 9%;
+  height: 4.8vw;
   color: rgb(0, 0, 0);
   /* border: 1px solid black; */
   /* border: 1px solid black; */
   /* background-color: #f0f0f0; Light grey background */
   font-weight: bold;
   cursor: pointer;
-  margin-right: 20px;
+  margin-right: 3%;
   text-align: center;
   /* 文本居中 */
-  line-height: 35px;
+  line-height: 3.0vw;
   /* 使文本垂直居中 */
-  padding-right: 20px;
+  /* padding-right: 1%; */
   /* 留出倒三角的空间 */
+  margin-top: 1.5vw;
 }
 
 .option:hover {
-  border-radius: 10px;
-  background-color: rgba(148, 166, 207, 0.1);
+  /* border-radius: 10px; */
+  background-color: rgba(161, 195, 253, 0.1);
 }
 
 
 /* after伪元素，添加小三角形 */
 .option::after {
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 1.2vw;
+  right: 1vw;
   content: "";
-  width: 5px;
-  height: 5px;
-  border-right: 2px solid #4696ff;
-  border-bottom: 2px solid #4696ff;
+  width: 0.3vw;
+  height: 0.3vw;
+  border-right: 0.2vw solid #4696ff;
+  border-bottom: 0.2vw solid #4696ff;
   transform: rotate(45deg);
   transition: all 0.4s;
 }
@@ -128,14 +128,14 @@ export default {
   /* border: 1px solid black; */
   background-color: rgb(244, 248, 255);
   z-index: 1;
-  font-size: 14px;
-  border-radius: 10px;
+  font-size: 0.9vw;
+  /* border-radius: 10px; */
 }
 
 /* 下拉菜单的选项 */
 .dropdown a {
   display: block;
-  padding: 10px;
+  padding: 1px;
   text-decoration: none;
   color: black;
 }
